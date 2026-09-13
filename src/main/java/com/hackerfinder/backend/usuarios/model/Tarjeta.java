@@ -20,7 +20,7 @@ import jakarta.persistence.Column;
 public class Tarjeta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idUsuario;
+    private Long idTarjeta;
 
     @Column(unique = true, nullable = false)
     private int numeroTarjeta;
