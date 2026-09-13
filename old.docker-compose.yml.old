@@ -1,0 +1,14 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: hackerfinder-db
+    environment:
+      MYSQL_ROOT_PASSWORD: h4ckd4w0rld
+      MYSQL_DATABASE: hackerfinder
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
